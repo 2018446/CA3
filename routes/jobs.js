@@ -1,12 +1,12 @@
 const express = require('express')
-const alien = require('../models/alien')
+const job = require('../models/job')
 const router = express.Router()
-const Alien = require('../models/alien')
+const Job = require('../models/job')
 
 router.get('/'), async(req, res) => {
     try{
-        const aliens = await Alien.find()
-        res.json(aliens)
+        const jobs = await Job.find()
+        res.json(Jobs)
     }catch(err){
         res.send('Error ' + err)
     }
@@ -14,22 +14,23 @@ router.get('/'), async(req, res) => {
 
 router.get('/:id'), async(req, res) => {
     try{
-        const alien = await Alien.findById(req.params.id)
-        res.json(alien)
+        const job = await Job.findById(req.params.id)
+        res.json(job)
     }catch(err){
         res.send('Error ' + err)
     }
 }
 
 router.post('/', async(req, res) =>{
-    const alien = new Alien({
+    const job = new Job({
         name: req.body.name,
-        tech: req.body.tech,
-        sub: req.body.sub
+        company: req.body.company,
+        place: req.body.place,
+        salary: req.body.salary
     })
 
     try{
-        const a1 = await alien.save()
+        const a1 = await job.save()
         res.json(a1)
     }catch(err){
         res.send('Error')
@@ -37,9 +38,9 @@ router.post('/', async(req, res) =>{
 
     router.patch('/:id', async(req,res) =>{
         try{
-            const alien = await Alien.findById(req.params.id)
-            alien.sub = req.body.sub
-            const a1 = await alien.save()  
+            const job = await Job.findById(req.params.id)
+            job.place = req.body.place
+            const a1 = await job.save()  
             res.json(a1)  
         }catch(err){
             res.send('Error')
@@ -48,9 +49,9 @@ router.post('/', async(req, res) =>{
     
     router.delete('/:id', async(req,res) =>{
         try{
-            const alien = await Alien.deleteByid(req.params.id)
-            alien.sub = req.body.sub
-            const a1 = await alien.save()  
+            const job = await Job.deleteByid(req.params.id)
+            job.place = req.body.place
+            const a1 = await job.save()  
             res.json(a1)  
         }catch(err){
             res.send('Error')
