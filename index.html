@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="jobslist_CA3">
+    <meta name="author" content="Miguel Bombonatto">
+
+    <title>Jobslist website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="view/css/bootstrap.min.css" rel="stylesheet">
+    <link href="view/css/bootstrap.min.css.map" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation to the jobslistpage -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Jobslist</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Jobslist">About Jobslist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="" class="bg-light">    <!--  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                 <h2 class="text-uppercase section-heading"> Jobslist Available jobs  </h2>
+                <p class="lead"></p>
+         
+            <a href="/new.html" class="btn btn-dark">Add new Jobs</a>
+             <div class="col-lg-12 text-center"> <p> </p>   </div>
+             
+ 
+ <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Job</th>
+                            <th>Salary</th>
+                            <th>Country</th>
+                            <th>Review</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--  call mondodbAtlas called REST/ Jobs
+                            "ejs tags that allow for you to embed a Javascript expression whose evaluation (return value) will be added to the template when compiled"
+                            the understanding code has been sourced from Availability: https://ejs.co/#docs . -->
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Catering Supervisor </td>
+                            <td> 3000 </td>
+                            <td>  Newcastle road, Galway  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/610690c297c3e9f2e2dae936">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/610690c297c3e9f2e2dae936?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> HGV Delivery Driver </td>
+                            <td> 2500 </td>
+                            <td>  Naas, County Kildare  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/610690e86a73b877aee44177">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/610690e86a73b877aee44177?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Team lead, Novi help operations </td>
+                            <td> 4000 </td>
+                            <td>  Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/610690ed6a73b877aee44178">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/610690ed6a73b877aee44178?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Law Enforcement response team analyst </td>
+                            <td> 2499 </td>
+                            <td>  Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/610691076a73b877aee44179">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/610691076a73b877aee44179?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Receptionist </td>
+                            <td> 1459 </td>
+                            <td>  Leoprdstown road, Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a17e6a73b877aee4417e">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a17e6a73b877aee4417e?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Project manager </td>
+                            <td> 3290 </td>
+                            <td>  Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a1916a73b877aee4417f">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a1916a73b877aee4417f?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Trainee Merchandiser </td>
+                            <td> 999 </td>
+                            <td>  Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a1a26a73b877aee44180">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a1a26a73b877aee44180?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Finance associate </td>
+                            <td> 5430 </td>
+                            <td>  Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a1af6a73b877aee44181">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a1af6a73b877aee44181?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Machine operators for injection moulding </td>
+                            <td> 5000 </td>
+                            <td>  Meath, county Meath  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a1c26a73b877aee44182">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a1c26a73b877aee44182?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        <!--Used to output the return value of an expression into the document-->
+                        <tr>
+                            
+                            <td> Logistic Operatives </td>
+                            <td> 2549 </td>
+                            <td>  Dulbin, County Dublin  </td>
+                
+                            <td>
+                                <!--   Calling my api/routes/Jobs/EDIT BACKEND via put. -->
+                            
+                                  <a href="/Jobs/job/6106a1d86a73b877aee44183">
+                                <button class="btn btn-warning" style="margin-left: 5px;" type="submit"><i class="fa fa-pencil" style="font-size: 15px;">edit
+                                </i></button>
+                            </a>
+                            <!--the following code  has been sourced from title: How To Build A Markdown Blog Using Node.js, Express, And MongoDB 
+                                Author: Web Dev Simplified Availability: https://www.youtube.com/watch?v=1NrHkjlWVhM-->
+                                <!--   Calling my api/routes/Jobs/DELETE BACKEND via post. -->
+                                <form action="/Jobs/job/6106a1d86a73b877aee44183?_omethod=DELETE" method="POST" class="d-inline">
+                                <button type="submit" class="btn btn-danger" style="margin-left: 5px;">delete
+                                </button>
+                               </form>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center"><span class="text-muted">© 2021</span></div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/PaddysCafe.js"></script>
+    <script>
+    //     not in use anymore
+    //window.addEventListener("load", function() {
+    //         document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+    //         document.querySelector("#calcBill").addEventListener("click", function() {
+    //             document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+    //         });
+    //         document.querySelector("#showVeg").addEventListener("click", function() {
+    //             highlightVegetarian('menuTable', this.checked);
+    //         });
+    //     });
+     </script>
+
+
+</div></section></body></html>

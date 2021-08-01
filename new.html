@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      
+    <!--  html form code when you click to add new job...will call my form to get user input to create a new document -->
+  
+    <title>Jobslist new jobs</title>
+  </head>
+  <body>
+      
+    <div class="container">
+     <h3>  New Job   </h3>
+      <form action="/Job" method="POST"><!-- CALL MY FOLDER ROUTES       -->
+          
+      <!--   when you click in add jobs or edit this validates the input and link fields data to the corresponding id.        -->
+  <div class="form-group">
+    <label for="item">Job and company name:</label>
+  
+      
+    <input required="" value="" type="text" name="item" id="item" class="form-control">
+  </div>
+  
+  <div class="form-group">
+   <label for="price">Salary:</label>
+   <input required="" value="" type="number" step="0" name="price" id="price" onkeypress="if(this.value.length>10) return false;" class="form-control">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Country:</label>
+    
+    <input required="" value="" type="text" name="name" id="name" class="form-control">
+  </div>
+  
+  <a href="/index.html" class="btn btn-danger">Cancel</a>
+  
+  <button class="btn btn-primary" type="submit" style="background-color: #3a3f3b;"> Save  </button><!--  USING THIS STATEMENT RENDER THE HTML IN FORM FIELD      -->
+      </form>
+    </div>
+  
+    
+  
+  </body></html>
