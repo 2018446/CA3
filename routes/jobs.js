@@ -24,9 +24,9 @@ router.get('/:id'), async(req, res) => {
 router.post('/', async(req, res) =>{
     const job = new Job({
         name: req.body.name,
-        company: req.body.company,
-        place: req.body.place,
-        salary: req.body.salary
+        salary: req.body.salary,
+        place: req.body.place
+        
     })
 
     try{
